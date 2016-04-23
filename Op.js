@@ -8,7 +8,7 @@ function Op () {
     this._gt = null;
     this._eq = null;
     this._neq = null;
-    this._p = null;
+    this._a = null;
     this._s = null;
     this._d = null;
 }
@@ -49,8 +49,8 @@ Op.prototype.setNEQ = function (neqFunction) {
  * Sets the addition function in the Op object
  * @param pFunction - the function that replaces the '+' operator
  */
-Op.prototype.setP = function (pFunction) {
-    this._p = pFunction;
+Op.prototype.setA = function (aFunction) {
+    this._a = aFunction;
 };
 
 /**
@@ -151,9 +151,9 @@ Op.prototype.neq = function (lhs, rhs) {
  * @param rhs - the right hand side of the pseudo-overloaded '+' operator
  * @returns {boolean}
  */
-Op.prototype.p = function (lhs, rhs) {
-    if (this._p != null) {
-        return this._p(lhs, rhs);
+Op.prototype.a = function (lhs, rhs) {
+    if (this._a != null) {
+        return this._a(lhs, rhs);
     }
 };
 
