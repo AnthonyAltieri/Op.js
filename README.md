@@ -3,8 +3,8 @@ Pseudo-operator overloading for Node.js!
 
 Like many of you I am a big fan of Node.js and I believe we will see it being used in software that has been traditionally
 developed in languages like C++ as the support by the community and the framework pushes it to a more Object-Oriented role.
-I enjoy javascript because of its idiosycracies that make it a unique Scripting language with some Object-Oriented caveats;
-however, I also really enjoy the power C++ gives a programmer and operator overloading is one of my favorite features that
+I enjoy javascript because of its properties that make it a unique Scripting language with some Object-Oriented caveats;
+however, I also enjoy the power C++ gives a programmer and operator overloading is one of my favorite features that
 come with the language. As of recent I've been dabbling in Object-Oriented programming in Node.js for my own practice and
 education and have found myself yearning for the ability to overload operators in Node.js but that is just not possible...
 until now! I have designed a utility object called Op that will accept functions that take the place of operators, because
